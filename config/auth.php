@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Job;
+use App\Policies\JobPolicy;
+
 return [
 
     /*
