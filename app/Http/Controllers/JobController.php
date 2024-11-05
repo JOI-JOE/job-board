@@ -21,9 +21,10 @@ class JobController extends Controller
             'category'
         );
 
-        return view('job.index', [
-            'jobs'  => Job::with('employer')->filter($filters)->get()
-        ]);
+        return view(
+            'job.index',
+            ['jobs' => Job::with('employer')->latest()->filter($filters)->get()]
+        );
     }
 
     /**
@@ -39,7 +40,7 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -55,7 +56,7 @@ class JobController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-public function edit(string $id)
+    public function edit(string $id)
     {
         //
     }

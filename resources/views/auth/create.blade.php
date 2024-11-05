@@ -1,5 +1,5 @@
-<x-layout>
-    <h1 class="my-16 text-center text-4xl font-medium text-slate-600">
+</x-layout>
+<h1 class="my-16 text-center text-4xl font-medium text-slate-600">
         Sign in to your account
     </h1>
     <x-card class="py-8 px-16">
